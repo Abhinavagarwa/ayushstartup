@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import search_icon_light from '../../assets/search-w.png'
 import search_icon_dark from '../../assets/search-b.png'
 import toggle_light from '../../assets/night.png'
@@ -17,11 +17,11 @@ const toggle_mode=()=>{
         <div className='navbar'>
             <img src="" alt=""  className='logo'/>
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/application">Application</Link></li>
-                <li><Link to="/aboutus">Aboutus</Link></li>
-                <li><Link to="/schemes">Schemes&Policies</Link></li>
-                <li><Link to="/resources">Resources</Link></li>
+                <li className='home'><NavLink to="/">Home</NavLink></li>
+                <li className='application'><NavLink to="/application">Application</NavLink></li>
+                <li className='aboutus'><NavLink to="/aboutus">Aboutus</NavLink></li>
+                <li className='schemes'><NavLink to="/schemes">Schemes&Policies</NavLink></li>
+                <li className='resources'><NavLink to="/resources">Resources</NavLink></li>
             </ul>
 
             <div className='search-box'>
