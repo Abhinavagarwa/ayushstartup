@@ -7,9 +7,15 @@
 .container{
     width: 100vw;
     min-height: 100vh;
-    background: aqua;
+    background-image:url('./assets/3.png');
+    background-repeat: no-repeat;
     transition: 0.5s;
+    background-size: 100% 100%;
 }
 .container.dark{
     background: #222;
+    background-image:url('./assets/image.png');
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    background-size: 100% 100%;
 }
