@@ -14,7 +14,7 @@ ul{
 }
 ul li{
    display: inline-block;
-    margin: 6px 13px;
+    margin: 6px 10px;
     font-size: 15px;
     cursor: pointer;
 }
@@ -79,4 +79,19 @@ ul a{
 .login{
     margin: 0;
     padding: 0;
+}
+.translation{
+    color: black;
+    padding: 10px;
+    border-radius: 60px;
+    background-color: #fff;
+    float: inline-end;
+    margin: 10px;
+    position: absolute;
+    top:90%;
+    left: 85%;
+}
+.dark .translation{
+    color: #000;
+    background-color: #fff;
 }

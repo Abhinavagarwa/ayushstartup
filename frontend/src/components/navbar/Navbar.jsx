@@ -14,6 +14,7 @@ const toggle_mode=()=>{
 }
 
     return(
+        <div>
         <div className='navbar'>
             <img src="" alt=""  className='logo'/>
             <ul>
@@ -31,9 +32,11 @@ const toggle_mode=()=>{
             </div>
             <img onClick={()=>{toggle_mode()}} src={theme=='light'? toggle_light:toggle_dark} alt="" className='toggle-icon'/>
             <ul className='login'>
-            <li className='app'><NavLink to="/">Login</NavLink></li>
+            <li className='app'><NavLink to="/">Login or Signup</NavLink></li>
             </ul>
 
+        </div>
+            <button className='translation'>Translate</button>
         </div>
     )
 }
