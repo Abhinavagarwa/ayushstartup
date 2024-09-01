@@ -8,6 +8,8 @@ import About from './pages/Aboutus.jsx'
 import Application from './pages/Application.jsx'
 import Schemes from './pages/Schemes.jsx'
 import Resources from './pages/Resouces.jsx'
+import Network from './pages/network.jsx';
+import Home from './pages/home.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
 <React.StrictMode>
     <Router>
@@ -17,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/application" element={<Application />} />
         <Route path="/schemes" element={<Schemes />} />
         <Route path="/resources" element={<Resources/>} />
+        <Route path="/network" element={<Network/>} />
       </Routes>
     </Router>
   </React.StrictMode>

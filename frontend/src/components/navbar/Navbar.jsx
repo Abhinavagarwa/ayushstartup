@@ -22,6 +22,7 @@ const toggle_mode=()=>{
                 <li className='aboutus'><NavLink to="/aboutus">Aboutus</NavLink></li>
                 <li className='schemes'><NavLink to="/schemes">Schemes&Policies</NavLink></li>
                 <li className='resources'><NavLink to="/resources">Resources</NavLink></li>
+                <li className='network'><NavLink to="/network">Network</NavLink></li>
             </ul>
 
             <div className='search-box'>
