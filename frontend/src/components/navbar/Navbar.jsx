@@ -45,7 +45,6 @@ const handleClick=(e)=>{
  
         </div>
         <Languageoption onChange={(e)=>handleClick(e)}/>
-            <button className='translation'>Translate</button>
         </div>
     )
 }

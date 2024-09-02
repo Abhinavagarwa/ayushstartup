@@ -1,0 +1,14 @@
+.translate{
+    padding: 10px;
+    border-radius: 60px;
+    position: absolute;
+    left:84%;
+    top:90%;
+    background-color: black;
+    color: white;
+}
+.dark .translate{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
