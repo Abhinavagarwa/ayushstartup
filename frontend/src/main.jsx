@@ -10,6 +10,7 @@ import Schemes from './pages/Schemes.jsx'
 import Resources from './pages/Resouces.jsx'
 import Network from './pages/network.jsx';
 import Home from './pages/home.jsx';
+import './i18.js'
 ReactDOM.createRoot(document.getElementById('root')).render(
 <React.StrictMode>
     <Router>
