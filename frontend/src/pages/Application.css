@@ -1,0 +1,127 @@
+.application-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Padding around the container */
+    background: rgba(0, 0, 0, 0.3); /* Slightly darkened background */
+  }
+  
+  /* Centering Form with Transparency and Padding */
+  .form-container {
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 12px; /* Rounded corners for the box */
+    padding: 30px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the box effect */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Maximum width for better centering */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  /* Heading Styling */
+  .application-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Dark color for readability */
+    text-align: center; /* Center heading */
+  }
+  
+  /* Form Styling */
+  form {
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px; /* Increased margin-top for spacing */
+    color: #333; /* Dark color for readability */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="date"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="file"] {
+    margin-top: 8px;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button[type="button"] {
+    background-color: #28a745;
+    margin-right: 10px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #218838;
+  }
+  
+  .pagination-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Landscape Mode Styles */
+  @media only screen and (orientation: landscape) {
+    .form-container {
+      width: 70%; /* Adjust width for landscape mode if needed */
+      max-width: 1200px; /* Increase max-width for larger screens */
+    }
+  
+    label {
+      font-size: 18px; /* Larger font size for readability */
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="date"],
+    textarea,
+    select {
+      padding: 14px; /* More padding for wider screens */
+    }
+  
+    button {
+      padding: 14px 24px; /* Larger button for better usability */
+      font-size: 18px; /* Adjust font size for better readability */
+    }
+  
+    .pagination-buttons {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
