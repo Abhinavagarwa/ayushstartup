@@ -16,6 +16,14 @@
     box-sizing: border-box;
     color: #ffffff;
 }
+.heading.light{
+    text-align: center;
+    color:#073b2b;
+}
+.heading.dark{
+    text-align: center;
+    color:#ffffff;
+}
 .image{
     width: 75%;
     height: auto;
