@@ -18,39 +18,52 @@ const Navbar = ({ theme, setTheme }) => {
     i18next.changeLanguage(e.target.value);
   };
 
-  const navItems = [
-    { to: "/home", text: t("home") },
-    { to: "/application", text: t("application") },
-    { to: "/aboutus", text: t("aboutus") },
-    { to: "/schemes", text: t("schemes") },
-    { to: "/resources", text: t("resources") },
-    { to: "/network", text: t("network") },
-  ];
-
   return (
-    <nav className="navbar-container">
+    <div className="navbar-container">
       <div className={`navbar ${theme === "dark" ? "dark" : ""}`}>
         <div className="left-side">
-          <NavLink to="/home" activeClassName="active"><img src="/logo.png" alt="" className="logo"/></NavLink>
+          <img src="/path/to/logo.png" alt="Logo" className="logo" />
           <ul>
-            {navItems.map((item, index) => (
-              <li key={index} className={item.to.slice(1)}>
-                <NavLink to={item.to} activeClassName="active">
-                  {item.text}
-                </NavLink>
-              </li>
-            ))}
+            <li className="home">
+              <NavLink to="/home" className={({ isActive }) => (isActive ? "active" : "")}>
+                {t("home")}
+              </NavLink>
+            </li>
+            <li className="application">
+              <NavLink to="/application" className={({ isActive }) => (isActive ? "active" : "")}>
+                {t("application")}
+              </NavLink>
+            </li>
+            <li className="aboutus">
+              <NavLink to="/aboutus" className={({ isActive }) => (isActive ? "active" : "")}>
+                {t("aboutus")}
+              </NavLink>
+            </li>
+            <li className="schemes">
+              <NavLink to="/schemes" className={({ isActive }) => (isActive ? "active" : "")}>
+                {t("schemes")}
+              </NavLink>
+            </li>
+            <li className="resources">
+              <NavLink to="/resources" className={({ isActive }) => (isActive ? "active" : "")}>
+                {t("resources")}
+              </NavLink>
+            </li>
+            <li className="network">
+              <NavLink to="/network" className={({ isActive }) => (isActive ? "active" : "")}>
+                {t("network")}
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="right-side">
           <input type="text" placeholder={t("search")} />
-          <button onClick={toggleMode} className="toggle-button">
-            <img
-              src={theme === "light" ? toggleLight : toggleDark}
-              alt="toggle-icon"
-              className="toggle-icon"
-            />
-          </button>
+          <img
+            onClick={toggleMode}
+            src={theme === "light" ? toggleLight : toggleDark}
+            alt="toggle-icon"
+            className="toggle-icon"
+          />
           <ul className="login">
             <li className="app">
               <NavLink to="/">{t("loginOrSignup")}</NavLink>
@@ -59,7 +72,7 @@ const Navbar = ({ theme, setTheme }) => {
         </div>
       </div>
       <Languageoption onChange={handleLanguageChange} />
-    </nav>
+    </div>
   );
 };
 
