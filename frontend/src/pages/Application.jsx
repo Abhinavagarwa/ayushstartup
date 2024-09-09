@@ -176,79 +176,77 @@ function Application() {
   const Page3 = () => (
     <div className="document-form">
       <h2>Upload Documents</h2>
-      <div className="document-upload">
-        <label>Company Registration Documents*</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "companyRegistration")}
-        />
+      <label>Company Registration Documents*</label>
+      <input
+        type="file"
+        onChange={(e) => handleFileChange(e, "companyRegistration")}
+      />
 
-        <label>PAN Card*</label>
-        <input type="file" onChange={(e) => handleFileChange(e, "panCard")} />
+      <label>PAN Card*</label>
+      <input type="file" onChange={(e) => handleFileChange(e, "panCard")} />
 
-        <label>Aadhaar Card*</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "aadhaarCard")}
-        />
+      <label>Aadhaar Card*</label>
+      <input
+        type="file"
+        onChange={(e) => handleFileChange(e, "aadhaarCard")}
+      />
 
-        <label>Proof of Address*</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "proofOfAddress")}
-        />
+      <label>Proof of Address*</label>
+      <input
+        type="file"
+        onChange={(e) => handleFileChange(e, "proofOfAddress")}
+      />
 
-        <label>License and Certifications*</label>
-        <input type="file" onChange={(e) => handleFileChange(e, "licenses")} />
+      <label>License and Certifications*</label>
+      <input type="file" onChange={(e) => handleFileChange(e, "licenses")} />
 
-        <label>AYUSH-specific Certifications*</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "ayushCertifications")}
-        />
+      <label>AYUSH-specific Certifications*</label>
+      <input
+        type="file"
+        onChange={(e) => handleFileChange(e, "ayushCertifications")}
+      />
 
-        <label>MOA and AOA*</label>
-        <input type="file" onChange={(e) => handleFileChange(e, "moaAOA")} />
+      <label>MOA and AOA*</label>
+      <input type="file" onChange={(e) => handleFileChange(e, "moaAOA")} />
 
-        <label>GST Registration Certificate*</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "gstCertificate")}
-        />
+      <label>GST Registration Certificate*</label>
+      <input
+        type="file"
+        onChange={(e) => handleFileChange(e, "gstCertificate")}
+      />
 
-        <label>Bank Account Details*</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "bankDetails")}
-        />
+      <label>Bank Account Details*</label>
+      <input
+        type="file"
+        onChange={(e) => handleFileChange(e, "bankDetails")}
+      />
 
-        <label>Quality Assurance Documentation*</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "qualityAssurance")}
-        />
+      <label>Quality Assurance Documentation*</label>
+      <input
+        type="file"
+        onChange={(e) => handleFileChange(e, "qualityAssurance")}
+      />
 
-        <label>Research and Development Details*</label>
-        <input type="file" onChange={(e) => handleFileChange(e, "rAndD")} />
+      <label>Research and Development Details*</label>
+      <input type="file" onChange={(e) => handleFileChange(e, "rAndD")} />
 
-        <label>Compliance Certificates*</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "complianceCertificates")}
-        />
+      <label>Compliance Certificates*</label>
+      <input
+        type="file"
+        onChange={(e) => handleFileChange(e, "complianceCertificates")}
+      />
 
-        <label>Declaration of Compliance*</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "declarationOfCompliance")}
-        />
+      <label>Declaration of Compliance*</label>
+      <input
+        type="file"
+        onChange={(e) => handleFileChange(e, "declarationOfCompliance")}
+      />
 
-        <label>Letters of Intent or Agreements*</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "lettersOfIntent")}
-        />
-      </div>
+      <label>Letters of Intent or Agreements*</label>
+      <input
+        type="file"
+        onChange={(e) => handleFileChange(e, "lettersOfIntent")}
+      />
 
       <div className="pagination-buttons">
         <button type="button" onClick={prevPage}>

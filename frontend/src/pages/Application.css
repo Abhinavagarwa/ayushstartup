@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +33,7 @@
 }
 
 .form-container {
-  background: rgba(255, 255, 255, 0.95); /* Slight transparency */
+  background: rgba(255, 255, 255, 0.30); 
   border-radius: 12px;
   padding: 40px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
@@ -119,6 +120,40 @@ button[type="button"]:hover {
   margin: 0 10px; /* Add space between buttons */
 }
 
+/* File Input Styling */
+input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px; /* Match with other input fields */
+  background-color: #fff;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #0056b3;
+}
+
+input[type="file"]:focus {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
+
+/* Document Upload Section */
 .document-upload {
   margin-top: 20px;
   padding: 20px;
@@ -171,7 +206,7 @@ button[type="button"]:hover {
 .application-container.dark .form-container,
 .application-container.dark .document-upload,
 .application-container.dark .document-requirements {
-  background: rgba(34, 34, 34, 0.95); /* Darker background for dark mode */
+  background: rgba(34, 34, 34, 0.40); /* Darker background for dark mode */
   color: #f0f4f8; /* Light text color for dark mode */
   border: 1px solid #444; /* Darker border color */
 }

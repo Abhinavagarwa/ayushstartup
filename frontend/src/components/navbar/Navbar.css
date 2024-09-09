@@ -33,6 +33,7 @@
 .left-side ul li {
   margin: 0 10px;
   font-size: 17px;
+  font-weight: bold;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
 }
