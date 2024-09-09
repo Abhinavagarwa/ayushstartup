@@ -22,7 +22,7 @@ const Navbar = ({theme, setTheme }) => {
     <div className="navbar-container">
       <div className={`navbar ${theme === "dark" ? "dark" : ""}`}>
         <div className="left-side">
-          <img src="" alt="" className="logo" />
+          <NavLink to="/home" activeClassName="active"><img src="/logo.png" alt="" className="logo"/></NavLink>
           <ul>
             <li className="home">
               <NavLink to="/home" activeClassName="active">
