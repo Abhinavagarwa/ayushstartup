@@ -1,0 +1,85 @@
+.card-container.dark, .card-container.light {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.cards.light{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-left: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #270c08;
+} 
+.cards.dark{
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-left: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+} 
+.cards.light img{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.cards.dark img{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    filter: brightness(50%);
+}
+
+.card-text.light {
+    font-family: "Great Vibes", cursive;
+    padding: 20px;
+    text-align: justify;
+    color: #270c08;
+}
+.card-text.dark {
+    font-family: "Great Vibes", cursive;
+    padding: 20px;
+    text-align: justify;
+    color: #edecec;
+}
+p {
+    margin-bottom: 10px;
+}
+.card-text p ul{
+    text-align: justify;
+    
+}
+.siteRefer{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto; 
+} 
+.siteRefer:hover {
+    background-color: #196b1c;
+}
+@media (max-width: 768px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+    .cards {
+      margin: 10px auto;
+    }
+}
