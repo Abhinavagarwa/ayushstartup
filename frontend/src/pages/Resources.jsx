@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/navbar/Navbar';
-import './resources.css'; // Resources CSS file for styling
+import './Resources.css'; 
 
 function Resources() {
   const current_theme = localStorage.getItem('current_theme');
