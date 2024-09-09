@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import App from './App.jsx';
+import App from './App.jsx'
+import './index.css'
+import About from './pages/Aboutus.jsx'
+import Application from './pages/Application.jsx'
+import Schemes from './pages/Schemes.jsx'
+import Resources from './pages/Resources.jsx'
+import Network from './pages/network.jsx';
 import Home from './pages/home.jsx';
 import About from './pages/Aboutus.jsx';
 import Application from './pages/Application.jsx';

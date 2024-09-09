@@ -31,7 +31,7 @@ const Navbar = ({ theme, setTheme }) => {
     <nav className="navbar-container">
       <div className={`navbar ${theme === "dark" ? "dark" : ""}`}>
         <div className="left-side">
-          <img src="" alt="" className="logo" />
+          <NavLink to="/home" activeClassName="active"><img src="/logo.png" alt="" className="logo"/></NavLink>
           <ul>
             {navItems.map((item, index) => (
               <li key={index} className={item.to.slice(1)}>
