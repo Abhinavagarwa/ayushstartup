@@ -5,10 +5,15 @@ import './resources.css'; // Resources CSS file for styling
 function Resources() {
   const current_theme = localStorage.getItem('current_theme');
   const [theme, setTheme] = useState(current_theme ? current_theme : 'light');
+  const [openIndex, setOpenIndex] = useState(null);
 
   useEffect(() => {
     localStorage.setItem('current_theme', theme);
   }, [theme]);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
     <div className={`container ${theme}`}>
@@ -75,7 +80,26 @@ function Resources() {
         {/* FAQ Section */}
         <div className="faq">
           <h2>Frequently Asked Questions</h2>
-          <p>Find answers to common questions about the registration process and portal usage.</p>
+          {[ 
+            { question: "What is the AYUSH Startup Registration Portal?", answer: "The AYUSH Startup Registration Portal is a platform designed to facilitate the registration of startups in the AYUSH (Ayurveda, Yoga, Unani, Siddha, and Homeopathy) sector." },
+            { question: "Who can register on the portal?", answer: "Any individual or group with a startup related to AYUSH can register on the portal." },
+            { question: "How do I register my startup?", answer: "To register, click on the 'Register' button, fill out the required details, and submit the form." },
+            { question: "Is there a registration fee?", answer: "No, registration on the portal is free of cost." },
+            { question: "What documents are needed for registration?", answer: "You will need documents such as a business plan, founder details, and other necessary startup credentials." },
+            { question: "How long does it take to get approval?", answer: "The approval process usually takes between 2 to 4 weeks." },
+            { question: "Can I update my startup details after registration?", answer: "Yes, you can log in to your account and update your details anytime." },
+            { question: "How can I contact support?", answer: "You can contact support by emailing us at support@ayushstartup.com or using the contact form on the website." },
+            { question: "What are the benefits of registering on this portal?", answer: "Registered startups gain access to government schemes, grants, and mentorship programs." },
+            { question: "Is the portal only for Indian startups?", answer: "Yes, the AYUSH Startup Registration Portal is currently open for Indian startups only." }
+          ].map((faq, index) => (
+            <div key={index} className="faq-item">
+              <h3 onClick={() => toggleFAQ(index)}>
+                {faq.question}
+                <span className={`arrow ${openIndex === index ? 'open' : ''}`}></span>
+              </h3>
+              {openIndex === index && <p>{faq.answer}</p>}
+            </div>
+          ))}
         </div>
 
         {/* Contact Section */}
