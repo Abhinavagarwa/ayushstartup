@@ -29,7 +29,8 @@
 .hero-section p {
     font-size: 1.35rem; 
     margin-bottom: 30px;
-    color: #c0c0c0; /* Medium grey for paragraphs */
+    font-weight: 600;
+    color: #33193d; /* Medium grey for paragraphs */
 }
 
 .hero-section .cta-button {
@@ -69,7 +70,7 @@
     text-align: center;
     text-wrap: wrap;
     font-weight: bold;
-    color: #e0e0e0; /* Light grey for paragraphs */
+    color: #33193d; /* Light grey for paragraphs */
 }
 
 .features-container, .steps-container {
@@ -107,7 +108,7 @@
 .features h3, .steps h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #0d92f8; /* Keep the color as is */
+    color: #1d1b1b; /* Keep the color as is */
 }
 
 /* Call-to-action section */
@@ -130,8 +131,10 @@
 .cta-section p {
     font-size: 1.25rem;
     margin-bottom: 30px;
-    color: #c0c0c0; /* Medium grey for paragraphs */
+    color: #33193d; /* Medium grey for paragraphs */
+    font-weight: 700; /* Slightly bold */
 }
+
 
 .cta-section .cta-button {
     background-color: #fff;
