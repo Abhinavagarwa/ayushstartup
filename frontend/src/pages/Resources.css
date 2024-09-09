@@ -1,0 +1,237 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the whole page */
+.container {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Hero Section Styling */
+/* Hero Section Styling */
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0); /* Increased transparency */
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Resource Categories Section */
+.resource-category {
+    padding: 40px 20px;
+    background-color: transparent; /* Fully transparent background */
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Visible outline */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.resource-category h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Category Box Styling */
+.category {
+    background-color: rgba(255, 255, 255, 0.8); /* Opaque white background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.category h3 {
+    font-size: 1.5rem;
+    color: #3d81ca;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.category p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category ul li {
+    margin-bottom: 8px;
+}
+
+.category a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.category a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* FAQ Section Styling */
+.faq {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Contact Section Styling */
+.contact {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact form label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact form button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+.contact p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .resource-category {
+        padding: 20px;
+    }
+
+    .category {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .category h3 {
+        font-size: 1.25rem;
+    }
+
+    .faq,
+    .contact {
+        padding: 20px;
+    }
+
+    .faq h2,
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .resource-category h2 {
+        font-size: 1.75rem;
+    }
+}
