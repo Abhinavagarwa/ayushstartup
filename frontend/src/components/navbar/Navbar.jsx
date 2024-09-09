@@ -1,16 +1,14 @@
 import React from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-import searchIconLight from "../../assets/search-w.png";
-import searchIconDark from "../../assets/search-b.png";
 import toggleLight from "../../assets/night.png";
 import toggleDark from "../../assets/day.png";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import Languageoption from "../language/language";
 
-const Navbar = ({ theme, setTheme }) => {
-  const { t } = useTranslation();
+const Navbar = ({theme, setTheme }) => {
+  const {t} = useTranslation();
 
   const toggleMode = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -28,32 +26,32 @@ const Navbar = ({ theme, setTheme }) => {
           <ul>
             <li className="home">
               <NavLink to="/home" activeClassName="active">
-                {t("Home")}
+                {t("home")}
               </NavLink>
             </li>
             <li className="application">
               <NavLink to="/application" activeClassName="active">
-                {t("Application")}
+                {t("application")}
               </NavLink>
             </li>
             <li className="aboutus">
               <NavLink to="/aboutus" activeClassName="active">
-                {t("Aboutus")}
+                {t("aboutus")}
               </NavLink>
             </li>
             <li className="schemes">
               <NavLink to="/schemes" activeClassName="active">
-                {t("Schemes")}
+                {t("schemes")}
               </NavLink>
             </li>
             <li className="resources">
               <NavLink to="/resources" activeClassName="active">
-                {t("Resources")}
+                {t("resources")}
               </NavLink>
             </li>
             <li className="network">
               <NavLink to="/network" activeClassName="active">
-                {t("Network")}
+                {t("network")}
               </NavLink>
             </li>
           </ul>
