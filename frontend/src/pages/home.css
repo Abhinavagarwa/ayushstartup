@@ -71,7 +71,6 @@
 }
 
 .about-portal h2:hover, .features-container h2:hover, .steps-container h2:hover {
-    color: #007bff; /* Change color on hover */
     transform: scale(1.05); /* Slight scale effect on hover */
 }
 
