@@ -22,7 +22,7 @@ const Navbar = ({ theme, setTheme }) => {
     <div className="navbar-container">
       <div className={`navbar ${theme === "dark" ? "dark" : ""}`}>
         <div className="left-side">
-          <img src="/path/to/logo.png" alt="Logo" className="logo" />
+          <img src="/logo.png" alt="Logo" className="logo" />
           <ul>
             <li className="home">
               <NavLink to="/home" className={({ isActive }) => (isActive ? "active" : "")}>
