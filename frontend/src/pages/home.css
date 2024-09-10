@@ -6,10 +6,10 @@
     background-attachment: fixed;
     text-align: center;
     padding: 0 4%;
+    color: #333; /* Default text color for light mode */
 }
 
 .hero-section {
-    color: #333; /* Dark text color for light mode */
     padding: 100px 20px; 
     border-radius: 20px; 
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); 
@@ -17,21 +17,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transition */
+    transition: box-shadow 0.4s ease, background-color 0.4s ease;
 }
 
 .hero-section h1 {
     font-size: 2.65rem; 
     margin-bottom: 20px;
     color: #181818;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Light shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-section p {
     font-size: 1.35rem; 
     margin-bottom: 30px;
     font-weight: 600;
-    color: #333; /* Dark grey for paragraphs in light mode */
+    color: #333;
 }
 
 .hero-section .cta-button {
@@ -42,36 +42,36 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease; /* Enhanced transitions */
+    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
 }
 
 .hero-section .cta-button:hover {
     background-color: #0056b3;
     transform: scale(1.1); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* About, Features, and Steps Sections */
 .about-portal, .features-container, .steps-container {
     padding: 40px 20px;
     border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     margin: 40px auto; 
     max-width: 1600px;
     text-align: center;
-    transition: box-shadow 0.4s ease; /* Smooth transition */
+    transition: box-shadow 0.4s ease;
 }
 
 .about-portal h2, .features-container h2, .steps-container h2 {
     font-size: 2.3rem;
     margin-bottom: 20px;
-    color: #000; /* Black color for headings in light mode */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Light shadow */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    color: #000;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .about-portal h2:hover, .features-container h2:hover, .steps-container h2:hover {
-    transform: scale(1.05); /* Slight scale effect on hover */
+    transform: scale(1.05);
 }
 
 .about-portal p, .features-container p, .steps-container p {
@@ -79,7 +79,7 @@
     text-align: center;
     text-wrap: wrap;
     font-weight: bold;
-    color: #333; /* Dark grey for paragraphs in light mode */
+    color: #333;
 }
 
 .features-container, .steps-container {
@@ -100,9 +100,9 @@
     margin: 15px;
     padding: 20px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.50); /* Increased opacity */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition */
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,40 +111,40 @@
 
 .features div:hover, .steps div:hover {
     transform: translateY(-7px); 
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .features h3, .steps h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #000; /* Black color for headings in light mode */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Light shadow */
+    color: #000;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Call-to-action section */
 .cta-section {
-    background: rgba(255, 255, 255, 0.15); /* Increased opacity */
-    color: #333; /* Dark text color for light mode */
+    background: rgba(255, 255, 255, 0.15);
+    color: #333;
     padding: 60px 20px; 
     border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     margin-top: 50px;
     text-align: center;
-    transition: box-shadow 0.4s ease; /* Smooth transition */
+    transition: box-shadow 0.4s ease;
 }
 
 .cta-section h2 {
     font-size: 2rem; 
     margin-bottom: 20px;
-    color: #000; /* Black color for headings in light mode */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Light shadow */
+    color: #000;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .cta-section p {
     font-size: 1.25rem;
     margin-bottom: 30px;
-    color: #000; /* Dark color for paragraphs in light mode */
-    font-weight: 700; /* Slightly bold */
+    color: #000;
+    font-weight: 700;
 }
 
 .cta-section .cta-button {
@@ -155,79 +155,95 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease; /* Enhanced transitions */
+    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
 }
 
 .cta-section .cta-button:hover {
     background-color: #0056b3;
-    color: #fff; /* White text color on hover */
+    color: #fff;
     transform: scale(1.1); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Dark mode adjustments */
 .home-container.dark {
-    background-color: #121212; /* Dark background color */
-    color: #fff; /* White text color */
+    color: #fff;
 }
 
 .hero-section.dark {
-    color: #fff; /* White text color */
-    background: #1e1e1e; /* Dark background */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7); /* Darker shadow */
+    color: #fff;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
 }
 
-.hero-section.dark h1 {
-    color: #fff; /* White color for headings */
-}
-
+.hero-section.dark h1,
 .hero-section.dark p {
     color: #fff;
 }
 
-.about-portal.dark, .features-container.dark, .steps-container.dark, .cta-section.dark {
-    background: rgba(255, 255, 255, 0.15); /* Increased opacity for dark mode */
-    color: #fff; /* White text color */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6); /* Enhanced shadow for dark mode */
+.about-portal.dark, 
+.features-container.dark, 
+.steps-container.dark, 
+.cta-section.dark {
+    background: rgba(255, 255, 255, 0.04);
+    color: #fff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
 }
 
-.about-portal.dark h2, .features-container.dark h2, .steps-container.dark h2, .cta-section.dark h2 {
-    color: #fff; /* White color for headings */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Light shadow */
+.about-portal.dark h2, 
+.features-container.dark h2, 
+.steps-container.dark h2, 
+.cta-section.dark h2,
+.about-portal.dark p, 
+.features-container.dark p, 
+.steps-container.dark p, 
+.cta-section.dark p {
+    color: #fff;
 }
 
-.about-portal.dark p, .features-container.dark p, .steps-container.dark p, .cta-section.dark p {
-    color: #fff; /* White color for paragraphs in dark mode */
+.features-container.dark div, 
+.steps-container.dark div {
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-.features-container.dark div, .steps-container.dark div {
-    background: rgba(255, 255, 255, 0.20); /* Increased opacity for dark mode */
-    color: #fff; /* White text color */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow for dark mode */
+.features-container.dark div:hover, 
+.steps-container.dark div:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
-.features-container.dark div:hover, .steps-container.dark div:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+.features-container.dark h3, 
+.steps-container.dark h3 {
+    color: #fff;
+}
+
+.cta-section.dark .cta-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.cta-section.dark .cta-button:hover {
+    background-color: #0056b3;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
     .features div, .steps div {
-        flex: 1 1 100%; /* Stack items vertically on small screens */
-        margin: 10px 0; /* Reduce margins for smaller screens */
+        flex: 1 1 100%;
+        margin: 10px 0;
     }
 }
 
 @media (max-width: 480px) {
     .hero-section h1 {
-        font-size: 1.75rem; /* Adjust font size for small screens */
+        font-size: 1.75rem;
     }
     
     .hero-section p {
-        font-size: 1.1rem; /* Adjust font size for small screens */
+        font-size: 1.1rem;
     }
     
     .cta-section h2 {
-        font-size: 1.5rem; /* Adjust font size for small screens */
+        font-size: 1.5rem;
     }
 }
