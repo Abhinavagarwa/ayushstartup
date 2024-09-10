@@ -50,17 +50,18 @@ body {
 }
 
 .mainDiv.light {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .mainDiv.dark {
-  background-color: rgba(44, 44, 44, 0.9);
+  background-color: rgba(44, 44, 44, 0.4);
   box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
 }
 
 .heading {
   font-family: 'Playfair Display', serif;
   text-align: center;
+  font-weight: 800;
   margin-bottom: 30px;
   transition: color 0.3s ease;
   animation: fadeIn 0.5s ease-out 0.2s both;
