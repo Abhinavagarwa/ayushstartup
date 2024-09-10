@@ -1,0 +1,69 @@
+.mainDiv.light{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #045c21;
+    box-shadow: 0 0 10px rgba(6, 66, 6, 0.649);
+    box-sizing: border-box;
+    color: #073b2b;
+}
+.mainDiv.dark{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    color: #ffffff;
+}
+.heading.light{
+    text-align: center;
+    color:#073b2b;
+}
+.heading.dark{
+    text-align: center;
+    color:#ffffff;
+}
+.image{
+    width: 75%;
+    height: auto;
+    padding-left: 25%;
+}
+.intro {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #4e1a1a;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.list li {
+    font-family: "Alex Brush", cursive;
+    padding: 10px;
+    padding-left: 5%;
+    border-bottom: 1px solid #ccc;
+    
+}
+.list li:last-child {
+    border-bottom: none;
+}
+.contact-info {
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc; 
+    padding-top: 10px; 
+    text-align: center; 
+    margin: 20px auto; 
+}
+.contact-info a {
+    text-decoration: none;
+    color:#ffffff
+}

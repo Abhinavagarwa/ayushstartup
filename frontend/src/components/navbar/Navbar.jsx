@@ -7,8 +7,8 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import Languageoption from "../language/language";
 
-const Navbar = ({theme, setTheme }) => {
-  const {t} = useTranslation();
+const Navbar = ({ theme, setTheme }) => {
+  const { t } = useTranslation();
 
   const toggleMode = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -22,35 +22,35 @@ const Navbar = ({theme, setTheme }) => {
     <div className="navbar-container">
       <div className={`navbar ${theme === "dark" ? "dark" : ""}`}>
         <div className="left-side">
-          <img src="" alt="" className="logo" />
+          <img src="/path/to/logo.png" alt="Logo" className="logo" />
           <ul>
             <li className="home">
-              <NavLink to="/home" activeClassName="active">
+              <NavLink to="/home" className={({ isActive }) => (isActive ? "active" : "")}>
                 {t("home")}
               </NavLink>
             </li>
             <li className="application">
-              <NavLink to="/application" activeClassName="active">
+              <NavLink to="/application" className={({ isActive }) => (isActive ? "active" : "")}>
                 {t("application")}
               </NavLink>
             </li>
             <li className="aboutus">
-              <NavLink to="/aboutus" activeClassName="active">
+              <NavLink to="/aboutus" className={({ isActive }) => (isActive ? "active" : "")}>
                 {t("aboutus")}
               </NavLink>
             </li>
             <li className="schemes">
-              <NavLink to="/schemes" activeClassName="active">
+              <NavLink to="/schemes" className={({ isActive }) => (isActive ? "active" : "")}>
                 {t("schemes")}
               </NavLink>
             </li>
             <li className="resources">
-              <NavLink to="/resources" activeClassName="active">
+              <NavLink to="/resources" className={({ isActive }) => (isActive ? "active" : "")}>
                 {t("resources")}
               </NavLink>
             </li>
             <li className="network">
-              <NavLink to="/network" activeClassName="active">
+              <NavLink to="/network" className={({ isActive }) => (isActive ? "active" : "")}>
                 {t("network")}
               </NavLink>
             </li>

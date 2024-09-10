@@ -7,7 +7,7 @@ import './index.css'
 import About from './pages/Aboutus.jsx'
 import Application from './pages/Application.jsx'
 import Schemes from './pages/Schemes.jsx'
-import Resources from './pages/Resouces.jsx'
+import Resources from './pages/Resources.jsx'
 import Network from './pages/network.jsx';
 import Home from './pages/home.jsx';
 import './i18.js'
